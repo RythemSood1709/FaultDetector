@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result - AI Fault Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="header">
+        <a href="/" class="logo">RELI<span>AI</span>BILITY</a>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </header>
+    <div class="page-content">
+        <div class="card">
+            <h2>Analysis Result</h2>
+            <img src="{{ url_for('static', filename='uploads/' + image_filename) }}" alt="Analyzed Image" class="image-preview">
+            <div class="result-text {{ prediction_class }}">
+                {{ prediction_text }}
+            </div>
+            <a href="/predict" class="btn" style="margin-top: 30px;">Analyze Another</a>
+        </div>
+    </div>
+</body>
+</html>

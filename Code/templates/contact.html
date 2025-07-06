@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - AI Fault Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="header">
+        <a href="/" class="logo">RELI<span>AI</span>BILITY</a>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </header>
+    <div class="page-content">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <img src="{{ url_for('static', filename='icon-email.png') }}" alt="Email">
+                    <h3>Email</h3>
+                    <p>info@smartbridge.com</p>
+                </div>
+                <div class="contact-item">
+                    <img src="{{ url_for('static', filename='icon-phone.png') }}" alt="Phone">
+                    <h3>Phone</h3>
+                    <p>+91 87564 XXX66</p>
+                </div>
+                <div class="contact-item">
+                    <img src="{{ url_for('static', filename='icon-location.png') }}" alt="Location">
+                    <h3>Location</h3>
+                    <p>Gachibowli, Telangana</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
